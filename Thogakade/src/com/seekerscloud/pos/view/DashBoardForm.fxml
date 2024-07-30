@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="280.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.DashBoardFormController">
+
+    <children>
+        <JFXButton layoutX="14.0" layoutY="55.0" onAction="#openCustomerManagementOnAction" prefHeight="76.0" prefWidth="175.0" style="-fx-background-color: #2ecc71;" text="Customer Management" textFill="#fffbfb">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="210.0" layoutY="57.0" onAction="#openItemManagementOnAction" prefHeight="76.0" prefWidth="175.0" style="-fx-background-color: #2980b9;" text="Item Management" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="401.0" layoutY="57.0" onAction="#openOderDetailsOnAction" prefHeight="76.0" prefWidth="175.0" style="-fx-background-color: #34495e;" text="Oder Details" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="14.0" layoutY="148.0" onAction="#openPlaceOrderOnAction" prefHeight="76.0" prefWidth="561.0" style="-fx-background-color: #d35400;" text="Place Order" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="508.0" layoutY="237.0" opacity="0.79" text="version 1.0.0" />
+        <Label layoutX="15.0" layoutY="238.0" opacity="0.78" text="Developed by : Seekerscloud" />
+      <Label layoutX="15.0" layoutY="20.0" text="Thogakade : Developers Stack">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="436.0" layoutY="20.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="465.0" layoutY="21.0" prefHeight="17.0" prefWidth="109.0" text="15:25:13" />
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemFormContext" prefHeight="400.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.ItemFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="19.0" layoutY="24.0" onAction="#backToHomeOnAction" style="-fx-background-color: #34495e;" text="Back to Home" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="482.0" layoutY="24.0" onAction="#newItemOnAction" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #2980b9;" text="+New Item" textFill="WHITE" />
+      <Label layoutX="231.0" layoutY="17.0" text="Item Form" textFill="#1c148d">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="19.0" layoutY="82.0" prefHeight="25.0" prefWidth="112.0" promptText="Code">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescription" layoutX="145.0" layoutY="82.0" prefHeight="25.0" prefWidth="146.0" promptText="Description">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="307.0" layoutY="82.0" prefHeight="25.0" prefWidth="146.0" promptText="Unit Price">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQtyOnHand" layoutX="465.0" layoutY="82.0" prefHeight="25.0" prefWidth="120.0" promptText="QTY On Hand">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnSaveItem" buttonType="RAISED" layoutX="465.0" layoutY="124.0" onAction="#saveItemOnAction" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #2ecc71;" text="Save Item" textFill="WHITE" />
+      <TextField fx:id="txtSearch" layoutX="19.0" layoutY="125.0" prefHeight="25.0" prefWidth="434.0" promptText="Search Item">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblItem" layoutX="19.0" layoutY="170.0" prefHeight="200.0" prefWidth="568.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="82.0" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="120.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="150.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="104.0" text="QTY On Hand" />
+            <TableColumn fx:id="colOptions" prefWidth="110.0" text="Options" />
+         </columns>
+      </TableView>
+      <Separator layoutX="191.0" layoutY="53.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
